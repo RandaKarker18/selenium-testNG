@@ -4,6 +4,7 @@
 *.ear
 *.class
 *.mvn/
+/test-output/
 
 *.properties
 *.project

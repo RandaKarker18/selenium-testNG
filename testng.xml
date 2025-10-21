@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TodoSuite">
+    
+    <!-- Paramètre global pour le navigateur -->
+    <parameter name="browser" value="chrome" />
+    
+    <test name="TodoTests">
+        <classes>
+            <!-- Chemin complet de ta classe de test -->
+            <class name="com.todo.tests.TodoTest"/>
+        </classes>
+    </test>
+
+</suite>

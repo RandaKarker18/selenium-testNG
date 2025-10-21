@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BasePage {
 
 	public static WebDriver driver;
+
 	public static Properties prop;
 	private String propertyFilePath = "src/main/resources/config/env-config.properties";
 
@@ -33,6 +34,10 @@ public class BasePage {
 			System.out.println("browser does not exist");
 		}
 
+	}
+
+	public static WebDriver getDriver() {
+		return driver;
 	}
 
 }
