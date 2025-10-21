@@ -1,6 +1,7 @@
 package com.todo.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import com.todo.utils.BasePage;
@@ -17,7 +18,7 @@ public class TodoPage {
 	private By todoList = By.cssSelector(".todo-list li");
 
 	public void addTodo(String todoText) {
-		driver.findElement(todoInput).sendKeys(todoText + "\n"); // \n simule Enter
+		driver.findElement(todoInput).sendKeys(todoText, Keys.ENTER);
 	}
 
 	public boolean isTodoAdded(String todoText) {

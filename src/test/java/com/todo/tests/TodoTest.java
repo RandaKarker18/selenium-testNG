@@ -17,7 +17,7 @@ public class TodoTest extends Setup {
 	@Test
 	public void testAddTodo() {
 		todoPage = new TodoPage();
-		String newTodo = "Learn Selenium";
+		String newTodo = prop.getProperty("todo1");
 		todoPage.addTodo(newTodo);
 		Assert.assertTrue(todoPage.isTodoAdded(newTodo), "Todo item was not added!");
 	}
